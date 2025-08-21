@@ -12,7 +12,8 @@ It covers foundations in mathematics, statistics, and programming, then moves in
 ---
 
 ## 🗺️ Visual Roadmap
-![Roadmap to Data Science](roadmap_to_ds.png)
+<img width="2379" height="1580" alt="image" src="https://github.com/user-attachments/assets/a801b9f5-6323-4a6a-9553-96eda8ebb9e2" />
+
 
 ---
 
