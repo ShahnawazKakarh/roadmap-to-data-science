@@ -35,4 +35,22 @@ print(f"Addition of 20 and 10 is: {add_result}")
 subtract_result = subtract(20, 10)
 print(f"Subtraction of 20 and 10 is: {subtract_result}")
 
+# Using built-in functions
+x = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+minimum_value = min(x)
+maximum_value = max(x)
+print(f"Minimum value in the set is: {minimum_value}")
+print(f"Maximum value in the set is: {maximum_value}")
 
+abs_value = abs(-20)
+print(f"Absolute value of -20 is: {abs_value}")
+
+# Using math module
+import math
+sqrt_value =math.sqrt(16)
+print(f"Square root of 16 is: {sqrt_value}")
+
+ceil_value = math.ceil(4.2)
+floor_value = math.floor(4.7)
+print(f"Ceiling value of 4.2 is: {ceil_value}")
+print(f"Floor value of 4.7 is: {floor_value}")
