@@ -1,0 +1,49 @@
+# Ignore Python cache files
+python/09-Modules-FileHandling/__pycache__/
+09-Modules-FileHandling/__pycache__/
+.__pycache__
+__pycache__
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment folders
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore log files
+*.log
+
+# Ignore compiled libraries
+*.so
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore build and distribution folders
+build/
+dist/
+*.egg-info/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
