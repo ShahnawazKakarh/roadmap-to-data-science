@@ -28,4 +28,11 @@ print(f"Length of 'Hello' is: {length_result}")
 reverse_result = str_util.reverse_string("Hello")
 print(f"Reversed string of 'Hello' is: {reverse_result}")
 
+from calculator import add, subtract
+add_result = add(20, 10)
+print(f"Addition of 20 and 10 is: {add_result}")
+
+subtract_result = subtract(20, 10)
+print(f"Subtraction of 20 and 10 is: {subtract_result}")
+
 

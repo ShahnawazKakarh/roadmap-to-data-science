@@ -1,6 +1,9 @@
 # Ignore Python cache files
 python/09-Modules-FileHandling/__pycache__/
 09-Modules-FileHandling/__pycache__/
+09-Modules-FileHandling/__pycache__/calculator.cpython-39.pyc
+09-Modules-FileHandling/__pycache__/strings.cpython-39.pyc
+
 .__pycache__
 __pycache__
 *.py[cod]
