@@ -54,3 +54,27 @@ ceil_value = math.ceil(4.2)
 floor_value = math.floor(4.7)
 print(f"Ceiling value of 4.2 is: {ceil_value}")
 print(f"Floor value of 4.7 is: {floor_value}")
+
+# EDA - Fake Data Processing
+import random
+import datetime
+
+today= datetime.date.today()
+print("Today's date is:", today)  # Current date and time
+
+now = datetime.datetime.now()
+print("Current date and time is:", now)  # Current date and time
+
+random_number = random.randint(1, 100)
+print(f"Random number between 1 and 100: {random_number}")
+
+choice = random.choice(['apple', 'banana', 'cherry', 'date'])
+print(f"Randomly selected fruit: {choice}")
+
+random_float = random.uniform(1.0, 10.0)
+print(f"Random float between 1.0 and 10.0: {random_float}")
+
+random_sample = random.sample(range(1, 100), 5)
+print(f"Random sample of 5 numbers from 1 to 100: {random_sample}")
+# Note: The above code demonstrates the use of user-defined modules, built-in functions, and standard libraries in Python.
+# It includes mathematical operations, string manipulations, and generating random data and dates.
