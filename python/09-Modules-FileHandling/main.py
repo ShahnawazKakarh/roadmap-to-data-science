@@ -13,6 +13,9 @@ print(f"Square of 11 is: {square_result}")
 cube_result = calc.cube(11)
 print(f"Cube of 3 is: {cube_result}")
 
+divide_result = calc.divide(10, 2)
+print(f"10 divided by 2 is: {divide_result}")
+
 str_utilresult = str_util.is_palindrome("madam")
 print(f"Is 'madam' a palindrome? {str_utilresult}")
 
