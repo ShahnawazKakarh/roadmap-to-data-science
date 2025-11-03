@@ -10,8 +10,8 @@ class Account:
         # This allows methods to manipulate the state of the particular instance they are called upon.
 
         # Initialize instance variables
-        self.account_number = account_number
-        self.account_holder = account_holder
+        self.account_number = account_number  ## Encapsulation: Using instance variables to store data
+        self.account_holder = account_holder  ## Encapsulation: Using instance variables to store data
         self.balance = balance
 
     # Add methods to deposit, withdraw, and check balance
@@ -90,7 +90,7 @@ class CurrentAccount(Account):
 # Example usage:
 if __name__ == "__main__":
     # Creating a Savings Account
-    savings_acc = SavingsAccount("Amjad", "Ali", 10000, 0.03)
+    savings_acc = SavingsAccount("Amjad", "Ali", 10000, 0.03)  ## Abstraction: Hiding complex details of account management
     savings_acc.display_account()
     savings_acc.deposit(500)
     savings_acc.withdraw(200)
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     print("\n")
 
     # Creating a Current Account
-    current_acc = CurrentAccount("Usman", "Ali", 15000, 30000)
+    current_acc = CurrentAccount("Usman", "Ali", 15000, 30000) ## Abstraction: Hiding complex details of account management
     current_acc.display_account()
     current_acc.deposit(200)
     current_acc.withdraw(700)  # Within overdraft limit
