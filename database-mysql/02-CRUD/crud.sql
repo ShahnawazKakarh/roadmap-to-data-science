@@ -37,6 +37,9 @@ INSERT INTO SK.employee VALUES (4, "Ajmal", "Zia", 23, 300000, "Peshawar");
 INSERT INTO SK.employee VALUES (5, "Waleed", "Ali", 29, 400000, "Quetta");
 INSERT INTO SK.employee VALUES (6, "Ahsan", "Khan", 27, 500000, "Faisalabad");
 
+-- Task: Describe the structure of the employee table.
+DESC SK.employee;
+
 -- Task: Retrieve all records from the employee table.
 SELECT * FROM SK.employee;
 
@@ -70,4 +73,14 @@ CREATE TABLE SK.employee (
     PRIMARY KEY (EmpID)
 );
 
--- Task: Update the salary of the employee with FirstName 'Ahsan' to 550000.
+-- Select specific columns from the employee table.
+SELECT FirstName, LastName FROM employee
+
+-- Order BY: Sort the results based on Salary in descending order and limit the output to top 2 records.
+SELECT FirstName, LastName, Salary FROM employee WHERE Salary >= 50000
+ORDER BY Salary DESC
+LIMIT 2
+
+-- Delete the employee table.
+DROP TABLE employee
+SHOW tables
