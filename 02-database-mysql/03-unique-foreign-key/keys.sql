@@ -20,9 +20,25 @@ WHERE EmpID = 4
 -- DML Commands: Data Manipulation Language Commands like Insert, Update, Delete, Read
 -- Example: Insert multiple employee records into the employee table.
 
--- Alter and Update Commands Difference?
--- Alter command is used to modify the structure of a database or schema of the database or object like a table,
--- whereas Update command is used to modify the data within the table. (DML)
+
+-- Difference between MODIFY, ALTER and UPDATE? Which one is DDL and which one is DML?
+
+-- ANSWER:
+-- UPDATE is used to change existing data/records in a table, making it a DML command.
+-- It modifies the data stored within the table without changing its structure.
+-- Example: Updating an employee's salary or name.
+-- Example of UPDATE:
+UPDATE employee SET Salary = 600000 WHERE EmpID = 2;
+
+-- ALTER is a DDL command used to change the structure of a database object, such as a table.
+-- It allows you to add, delete, or modify columns and constraints in a table.
+-- Example of ALTER:
+ALTER TABLE employee ADD COLUMN Department VARCHAR(50);
+
+-- MODIFY is a clause used within the ALTER command to change the definition of a column in a table, making it part of DDL.
+-- It is specifically used to alter the data type, size, or other attributes of an existing column.
+-- Example of MODIFY:
+ALTER TABLE employee MODIFY COLUMN Salary INT NOT NULL;
 
 
 -- Alter the employee table to modify the FirstName column to have a length of 60 characters.
@@ -36,6 +52,8 @@ WHERE EmpID = 6
 DROP TABLE employee
 
 -- Aggregate Functions
+-- Aggregate functions perform a calculation on a set of values and return a single value.
+-- Common aggregate functions include COUNT, SUM, AVG, MAX, and MIN.
 SELECT COUNT(*) As Total_Num_Employee FROM employee
 SELECT MAX(Salary) As Max_Salary FROM employee
 SELECT MIN(Salary) As Min_Salary FROM employee
