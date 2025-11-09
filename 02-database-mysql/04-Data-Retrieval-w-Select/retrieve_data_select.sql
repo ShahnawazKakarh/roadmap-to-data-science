@@ -26,6 +26,10 @@ INSERT INTO Course(CourseName,CourseDuration_Months,CourseFee) Values("SQL Bootc
 
 SELECT * FROM Course
 
+-- Primary Key -> Unique Identifier for each record, and not null
+-- Unique Key -> Unique values (like email should be unique of all records), but can be null
+-- Foreign Key -> Refers to the primary key of another table, and establishes a link between the two tables with not null values
+
 CREATE TABLE Learners(
 Learner_Id INT AUTO_INCREMENT,
 LearnerFirstName VARCHAR(50) NOT NULL,
