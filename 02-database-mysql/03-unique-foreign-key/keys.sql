@@ -54,7 +54,10 @@ DROP TABLE employee
 -- Aggregate Functions
 -- Aggregate functions perform a calculation on a set of values and return a single value.
 -- Common aggregate functions include COUNT, SUM, AVG, MAX, and MIN.
+SELECT COUNT(*) FROM SK.employee;
 SELECT COUNT(*) As Total_Num_Employee FROM employee
+
+SELECT AVG(Salary) As Avg_Salary FROM employee
 SELECT MAX(Salary) As Max_Salary FROM employee
 SELECT MIN(Salary) As Min_Salary FROM employee
 SELECT SUM(Salary) As Total_Cost_Company FROM employee
