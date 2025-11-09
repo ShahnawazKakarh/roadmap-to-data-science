@@ -1,5 +1,5 @@
 SHOW DATABASES
-USE techforallwithpriya
+USE SK
 SHOW TABLES
 SELECT * FROM employee
 
