@@ -5,6 +5,29 @@ SELECT * FROM employee
 UPDATE employee SET LastName = "Tanwar"
 WHERE EmpID = 6
 
+-- Update the Salary of the employee with EmpID 4 to 350000.
+UPDATE employee SET Salary = 350000
+WHERE EmpID = 4
+
+-- DDL Language: Defining and modifying database structures.
+-- DDL Commands: Data Definition Language Commands like Create, Drop, Alter
+-- Example: Create the employee table with EmpID as primary key and auto incremented.
+
+-- What are about READ? DML or DDL?
+-- READ is part of DML (Data Manipulation Language) as it involves retrieving data from the database without altering its structure.
+
+-- DML Language: Defining and manipulating data within database structures.
+-- DML Commands: Data Manipulation Language Commands like Insert, Update, Delete, Read
+-- Example: Insert multiple employee records into the employee table.
+
+-- Alter and Update Commands Difference?
+-- Alter command is used to modify the structure of a database or schema of the database or object like a table,
+-- whereas Update command is used to modify the data within the table. (DML)
+
+
+-- Alter the employee table to modify the FirstName column to have a length of 60 characters.
+ALTER TABLE SK.employee MODIFY FirstName varchar(60);
+
 -- Delete the employee with EmpID 6 from the employee table.
 DELETE FROM employee
 WHERE EmpID = 6
