@@ -26,10 +26,14 @@ INSERT INTO Course(CourseName,CourseDuration_Months,CourseFee) Values("SQL Bootc
 
 SELECT * FROM Course
 
--- Primary Key -> Unique Identifier for each record, and not null
--- Unique Key -> Unique values (like email should be unique of all records), but can be null
--- Foreign Key -> Refers to the primary key of another table, and establishes a link between the two tables with not null values
+-- Primary Key -> Unique Identifier for each record, and not null (every learner must have a unqiue ID)
+-- Unique Key -> Unique values (like email should be unique of all records), but can be null (every learner must have not similar email id)
+-- Foreign Key -> Refers to the primary key of another table, and establishes a link between the two tables with not null values (selected course must be valid and taken reference from Course table)
 
+
+-- Create Learners table with Learner_Id as primary key which is auto incremented,
+-- LearnerEmailID as Unique Key
+-- and SelectedCourses as foregin key.
 CREATE TABLE Learners(
 Learner_Id INT AUTO_INCREMENT,
 LearnerFirstName VARCHAR(50) NOT NULL,
@@ -53,13 +57,12 @@ DESC Learners
 -- Batch start date '1' - '2024-02-29'
 -- Batch start date '2' - '2024-01-16'
 -- Batch start date '3' - '2024-03-25'
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES ("Akash", "Mishra", '9998887776', "akash@gmail.com", '2024-01-21', 1, 4, "Amazon", "LinkedIn", '2024-02-29', "Bengaluru");
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Rishikesh","Joshi","9950192388", "carjkop@gmail.com", '2024-03-19', 3, 2, "HCL", "Youtube", '2024-03-25', "Chennai");
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Jeevan","Hegde", "9657856732","jeevanhegdek@yahoo.co.in", '2024-01-15', 2, 0, "", "Linkedin", '2024-01-16', "Noida");
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Akhil","George","7689558930", "akhil.george.8743@gmail.com", '2024-03-13', 3, 4, "Accenture", "Community", '2024-03-25', "Bengaluru");
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location)VALUES("Sidhish","Kumar","6475765443", "sidhishkumar@gmail.com",'2024-01-10', 1, 4, "Meta", "Youtube", '2024-03-29', "Bengaluru");
-INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("NagaSai","Sreedhar","9182937061", "saisreedhar2001@gmail.com", '2024-03-17', 3, 4, "TCS", "Community", '2024-03-25', "Mumbai");
-
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES ("Ajmal", "Zia", '34590124565', "ajmal.zia@gmail.com", '2024-01-21', 1, 4, "Amazon", "LinkedIn", '2024-02-29', "Faisalabad");
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Junaid","Ali","3005689012", "junaid@gmail.com", '2024-03-19', 3, 2, "HCL", "Youtube", '2024-03-25', "Lahore");
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Waleed","Ali", "3219090909","waleedali@yahoo.co.in", '2024-01-15', 2, 0, "", "Linkedin", '2024-01-16', "Peshawar");
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Ahmad","Khan","3007867861", "ahmad.khan.8743@gmail.com", '2024-03-13', 3, 4, "Accenture", "Community", '2024-03-25', "Sheikupura");
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location)VALUES("Sohail","Afridi","3007867860", "sohail@gmail.com",'2024-01-10', 1, 4, "Meta", "Youtube", '2024-03-29', "Islamabad");
+INSERT INTO Learners(LearnerFirstName,LearnerLastName,LearnerPhoneNo,LearnerEmailID,LearnerEnrollmentDate,SelectedCourses,YearsOfExperience,LearnerCompany,SourceOfJoining,Batch_Start_Date,Location) VALUES("Asim","Muneer","3007867862", "asim@gmail.com", '2024-03-17', 3, 4, "TCS", "Community", '2024-03-25', "Karachi");
 SELECT * FROM Learners
 
 -- Data Analysis [Employee, Course, Learners]
