@@ -1,3 +1,8 @@
+-- How querry runs?
+-- From, Select, Order By (Sort the Data), Limit
+-- From, Where, Select, Order By, Limit
+
+
 SHOW DATABASES
 USE SK
 SHOW TABLES
@@ -85,6 +90,11 @@ WHERE Salary = (
 );
 
 SELECT * FROM employee
+
+
+-- Update the record of learner id 3 with years of experience as 2 and learner company as HCL
+UPDATE `sk`.`Learners` SET `YearsOfExperience` = '2', `LearnerCompany` = 'HCL' WHERE (`Learner_Id` = '3');
+UPDATE `sk`.`Learners` SET `YearsOfExperience` = '1' WHERE (`Learner_Id` = '3');
 
 
 -- 2. Give me the record of the employee getting highest salary and age is bigger than 30
