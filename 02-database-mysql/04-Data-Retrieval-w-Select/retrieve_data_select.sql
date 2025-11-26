@@ -119,6 +119,15 @@ SELECT * FROM Learners
 SELECT COUNT(*) as num_learners_jan FROM Learners
 WHERE LearnerEnrollmentDate LIKE '%-01-21'
 
+-- ANOTHER WAY
+SELECT COUNT(*) as num_learners_jan FROM Learners
+WHERE MONTH(LearnerEnrollmentDate) = 1
+
+-- ANOTHER WAY
+SELECT COUNT(*) as num_learners_jan FROM Learners
+WHERE LearnerEnrollmentDate BETWEEN '2024-01-01' AND '2024-01-31'
+
+
 -- 6. Update the Jeevan data with years of experience as 1 and learner company as "Amazon"
 Update Learners 
 SET YearsOfExperience = 2, LearnerCompany = 'Amazon' 
