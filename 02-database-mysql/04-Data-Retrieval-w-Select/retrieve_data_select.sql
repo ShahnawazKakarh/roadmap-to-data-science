@@ -127,8 +127,14 @@ WHERE MONTH(LearnerEnrollmentDate) = 1
 SELECT COUNT(*) as num_learners_jan FROM Learners
 WHERE LearnerEnrollmentDate BETWEEN '2024-01-01' AND '2024-01-31'
 
+-- If we want to be specific on date use LIKE operator with % for month and day
+-- DATE FORMAT -> 'YYYY-MM-DD'
+-- '2024-01-21'
+SELECT COUNT(*) as num_learners_jan FROM Learners
+WHERE LearnerEnrollmentDate LIKE '%-01-21%';
 
--- 6. Update the Jeevan data with years of experience as 1 and learner company as "Amazon"
+
+-- 6. Update the Ahmad data with years of experience as 1 and learner company as "Amazon"
 Update Learners 
 SET YearsOfExperience = 2, LearnerCompany = 'Amazon' 
 WHERE Learner_Id = 4
